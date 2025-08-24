@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "gio8l",
   description: "hi! im gio! here you will find my social media pages!",
   generator: "v0.app",
+  icon: "favicon.ico".
 }
 
 export default function RootLayout({
