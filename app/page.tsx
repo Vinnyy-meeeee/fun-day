@@ -1,6 +1,15 @@
+"use client"
+
 import { Card } from "@/components/ui/card"
+import { useEffect, useState } from "react"
 
 export default function Home() {
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    setIsVisible(true)
+  }, [])
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 flex items-center justify-center p-4">
       {/* Geometric background pattern */}
@@ -13,7 +22,11 @@ export default function Home() {
       </div>
 
       {/* Main content card */}
-      <Card className="relative z-10 bg-gray-800/40 border-gray-600/30 p-10 max-w-2xl w-full backdrop-blur-md shadow-2xl">
+      <Card
+        className={`relative z-10 bg-gray-800/40 border-gray-600/30 p-10 max-w-2xl w-full backdrop-blur-md shadow-2xl transition-all duration-1000 ease-out ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        }`}
+      >
         <div className="space-y-8">
           {/* Top - Name and description */}
           <div className="text-center space-y-6">
