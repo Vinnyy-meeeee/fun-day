@@ -108,6 +108,10 @@ export default function Home() {
               youtube
             </a>
           </div>
+
+          <div className="text-center pt-4 border-t border-gray-600/30">
+            <p className="text-gray-400 text-sm font-light">for business inquiries: gio@gio8l.lol</p>
+          </div>
         </div>
       </Card>
     </div>
