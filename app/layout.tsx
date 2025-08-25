@@ -5,8 +5,8 @@ import { GeistMono } from "geist/font/mono"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "gio8l",
-  description: "hi! im gio! here you will find my social media pages!",
+  title: "funday",
+  description: "hello all i got fun things for a day... like a fun p.r0xy?",
   generator: "v0.app",
 }
 
