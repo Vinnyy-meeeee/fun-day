@@ -3,7 +3,7 @@
 import { Card } from "@/components/ui/card"
 import { useEffect, useState } from "react"
 
-export default function Home() {
+export default function FunDay() {
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
@@ -12,7 +12,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 flex items-center justify-center p-4">
-      {/* Geometric background pattern */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] opacity-5">
           <div className="absolute inset-0 border border-gray-500 rotate-45 rounded-2xl"></div>
@@ -21,96 +20,103 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Main content card */}
       <Card
         className={`relative z-10 bg-gray-800/40 border-gray-600/30 p-10 max-w-2xl w-full backdrop-blur-md shadow-2xl transition-all duration-1000 ease-out ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >
         <div className="space-y-8">
-          {/* Top - Name and description */}
           <div className="text-center space-y-6">
             <div className="space-y-3">
-              <h1 className="text-5xl font-light text-white tracking-wide">gio8l</h1>
+              <h1 className="text-5xl font-light text-white tracking-wide">Fun Day</h1>
               <div className="w-16 h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent mx-auto"></div>
             </div>
             <p className="text-gray-300 text-base leading-relaxed font-light">
-              hi! im gio! here you will find my social media pages!
+              hello all i got fun things for a day... like a fun p.r0xy?
             </p>
           </div>
 
-          {/* Bottom - Social media links grid */}
-          <div className="grid grid-cols-4 gap-3">
+          <div className="space-y-3">
             <a
-              href="https://discord.gg/PRMYACwh7a"
-              className="bg-gray-700/50 hover:bg-gray-600/60 border border-gray-600/40 hover:border-gray-500/60 text-white py-3 rounded-xl text-xs font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg backdrop-blur-sm text-center"
+              href="https://grimace-shake.skibidi-rizz-gyatt-fanum-tax-sigma-ohio.ct.ws/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-gray-700/50 hover:bg-gray-600/60 border border-gray-600/40 hover:border-gray-500/60 text-white py-3 px-1 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg backdrop-blur-sm text-center"
             >
-              discord
+              space
             </a>
-            <a
-              href="/funday"
-              className="bg-gray-700/50 hover:bg-gray-600/60 border border-gray-600/40 hover:border-gray-500/60 text-white py-3 rounded-xl text-xs font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg backdrop-blur-sm text-center"
-            >
-              fun day
-            </a>
-            <a
-              href="https://github.com/gio8l"
-              className="bg-gray-700/50 hover:bg-gray-600/60 border border-gray-600/40 hover:border-gray-500/60 text-white py-3 rounded-xl text-xs font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg backdrop-blur-sm text-center"
-            >
-              github
-            </a>
-            <a
-              href="https://giomodz.carrd.co"
-              className="bg-gray-700/50 hover:bg-gray-600/60 border border-gray-600/40 hover:border-gray-500/60 text-white py-3 rounded-xl text-xs font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg backdrop-blur-sm text-center"
-            >
-              giomodz
-            </a>
-            <a
-              href="https://instagram.com/vrhd_"
-              className="bg-gray-700/50 hover:bg-gray-600/60 border border-gray-600/40 hover:border-gray-500/60 text-white py-3 rounded-xl text-xs font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg backdrop-blur-sm text-center"
-            >
-              instagram
-            </a>
-            <a
-              href="https://soundcloud.com/gio8l"
-              className="bg-gray-700/50 hover:bg-gray-600/60 border border-gray-600/40 hover:border-gray-500/60 text-white py-3 rounded-xl text-xs font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg backdrop-blur-sm text-center"
-            >
-              soundcloud
-            </a>
-            <a
-              href="https://tiktok.com/@.vrhd"
-              className="bg-gray-700/50 hover:bg-gray-600/60 border border-gray-600/40 hover:border-gray-500/60 text-white py-3 rounded-xl text-xs font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg backdrop-blur-sm text-center"
-            >
-              tiktok
-            </a>
-            <a
-              href="https://twitch.tv/gio8l"
-              className="bg-gray-700/50 hover:bg-gray-600/60 border border-gray-600/40 hover:border-gray-500/60 text-white py-3 rounded-xl text-xs font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg backdrop-blur-sm text-center"
-            >
-              twitch
-            </a>
-            <a
-              href="https://linktr.ee/wavesmoddedshiz"
-              className="bg-gray-700/50 hover:bg-gray-600/60 border border-gray-600/40 hover:border-gray-500/60 text-white py-3 rounded-xl text-xs font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg backdrop-blur-sm text-center"
-            >
-              waves modded
-            </a>
-            <a
-              href="https://x.com/gio8ll"
-              className="bg-gray-700/50 hover:bg-gray-600/60 border border-gray-600/40 hover:border-gray-500/60 text-white py-3 rounded-xl text-xs font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg backdrop-blur-sm text-center"
-            >
-              x
-            </a>
-            <a
-              href="https://youtube.com/@vrhdx"
-              className="bg-gray-700/50 hover:bg-gray-600/60 border border-gray-600/40 hover:border-gray-500/60 text-white py-3 rounded-xl text-xs font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg backdrop-blur-sm text-center"
-            >
-              youtube
-            </a>
-          </div>
 
-          <div className="text-center pt-4 border-t border-gray-600/30">
-            <p className="text-gray-400 text-sm font-light">for business inquiries: gio@gio8l.lol</p>
+            <a
+              href="https://tststststststststststststststststststststs.zavoj.ch/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-gray-700/50 hover:bg-gray-600/60 border border-gray-600/40 hover:border-gray-500/60 text-white py-3 px-1 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg backdrop-blur-sm text-center"
+            >
+              intersteller
+            </a>
+
+            <a
+              href="https://drive.google.com/drive/folders/1UuYKCOYc-V2yiMhFz53F29zeu-3PDS27?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-gray-700/50 hover:bg-gray-600/60 border border-gray-600/40 hover:border-gray-500/60 text-white py-3 px-1 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg backdrop-blur-sm text-center"
+            >
+              back to the future 1,2,3
+            </a>
+
+            <a
+              href="https://docs.google.com/document/d/1nFpIKWNnsDdsRc5UWyZvZbwqjkSWRt_f-XBFuSZbFcE/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-gray-700/50 hover:bg-gray-600/60 border border-gray-600/40 hover:border-gray-500/60 text-white py-3 px-1 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg backdrop-blur-sm text-center"
+            >
+              reds exp corner
+            </a>
+
+            <a
+              href="https://classlink.riversideacademy.site"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-gray-700/50 hover:bg-gray-600/60 border border-gray-600/40 hover:border-gray-500/60 text-white py-3 px-1 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg backdrop-blur-sm text-center"
+            >
+              frogies arcade
+            </a>
+
+            <a
+              href="https://peak.conyser.cl"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-gray-700/50 hover:bg-gray-600/60 border border-gray-600/40 hover:border-gray-500/60 text-white py-3 px-1 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg backdrop-blur-sm text-center"
+            >
+              waves
+            </a>
+
+            <a
+              href="https://jesuschristforlife.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-gray-700/50 hover:bg-gray-600/60 border border-gray-600/40 hover:border-gray-500/60 text-white py-3 px-1 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg backdrop-blur-sm text-center"
+            >
+              velara
+            </a>
+
+            <a
+              href="https://achievementnetwork.gq"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-gray-700/50 hover:bg-gray-600/60 border border-gray-600/40 hover:border-gray-500/60 text-white py-3 px-1 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg backdrop-blur-sm text-center"
+            >
+              rammerhead (use at your own risk)
+            </a>
+
+            <a
+              href="https://intrinsic.observer"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-gray-700/50 hover:bg-gray-600/60 border border-gray-600/40 hover:border-gray-500/60 text-white py-3 px-1 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg backdrop-blur-sm text-center"
+            >
+              radius
+            </a>
           </div>
         </div>
       </Card>
