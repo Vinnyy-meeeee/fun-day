@@ -33,6 +33,7 @@ export default function FunDay() {
             </div>
             <p className="text-gray-300 text-base leading-relaxed font-light">
               hello all i got fun things for a day... like a fun p.r0xy?
+none of these links were made by me, if there are any problems or have any suggestions for sites/movies dm me on discord @vrhd <3
             </p>
           </div>
 
